@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     **Security** in case of vulnerabilities.
  -->
 
-## Unreleased
+## 0.2.0 - 2022-06-19
 
 ### Added
 - ([`cb21a1f`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/cb21a1f3d1e737e572c6f0c90d63092e05df98af)) Support URLs with `.html` and `.htm` file extensions.

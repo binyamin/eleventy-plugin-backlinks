@@ -1,14 +1,15 @@
 {
   "name": "eleventy-plugin-backlinks",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Collect and display backlinks from your notes",
   "keywords": [
 		"eleventy",
 		"eleventy-plugin",
-		"backlinks",
-		"wikilinks",
+		"backlink",
+		"wikilink",
 		"wiki",
-		"notes"
+		"note",
+		"notebook"
 	],
   "author": "Binyamin Aron Green (https://binyam.in/)",
   "license": "MIT",
