@@ -6,7 +6,7 @@ const getExistingData = require("./lib/get-existing-data.js");
  * @param eleventy
  * @param {object} [options]
  * @param {string} [options.folder] Root folder with your notes (default: 'notes')
- * @param {(note: any) => Record<string, unknown>} [options.getData] Get
+ * @param {(note: any) => unknown} [options.getData] Get
  * and return the data you want passed into `backlinks`
  */
 function BacklinksPlugin(eleventy, options={}) {
@@ -21,6 +21,7 @@ function BacklinksPlugin(eleventy, options={}) {
         ...options,
     };
 
+	// Remove leading or trailing slash from `options.folder`
     options.folder = options.folder.replace(/^\/?(.+)\/?$/, '$1');
 
     function isNoteFile(url) {
