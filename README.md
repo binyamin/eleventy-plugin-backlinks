@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-For every page in the given folder, you get `backlinks` variable. By default, it contains an array, with the title (if set) and the url of each page.
+For every page in the given folder, you get a `backlinks` variable. By default, it contains an array, with the title (if set) and the url of each page.
 
 
 ### Options
