@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-backlinks",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Collect and display backlinks from your notes",
   "keywords": [
 		"eleventy",

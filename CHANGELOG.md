@@ -13,6 +13,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     **Security** in case of vulnerabilities.
  -->
 
+## 0.2.1 - 2022-10-26
+
+### Fixed
+- ([`ad2aeff`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/ad2aeffb8d1d5c00f74ec5e757ed8bc56a23ba19)) Normalize strings when identifying backlinks. See [binyamin/eleventy-garden#91](https://github.com/binyamin/eleventy-garden/pull/91).
+
+
 ## 0.2.0 - 2022-06-19
 
 ### Added
