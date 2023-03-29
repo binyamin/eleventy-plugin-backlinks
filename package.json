@@ -3,18 +3,18 @@
   "version": "0.2.1",
   "description": "Collect and display backlinks from your notes",
   "keywords": [
-		"eleventy",
-		"eleventy-plugin",
-		"backlink",
-		"wikilink",
-		"wiki",
-		"note",
-		"notebook"
-	],
+    "eleventy",
+    "eleventy-plugin",
+    "backlink",
+    "wikilink",
+    "wiki",
+    "note",
+    "notebook"
+  ],
   "author": "Binyamin Aron Green (https://binyam.in/)",
   "license": "MIT",
   "main": "index.js",
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/binyamin/eleventy-plugin-backlinks.git"
   },
@@ -26,7 +26,7 @@
     "test": "node test/index.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^2.0.1",
     "markdown-it": "^13.0.1",
     "markdown-it-wikilinks": "^1.2.0"
   },
