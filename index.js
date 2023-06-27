@@ -34,7 +34,7 @@ function BacklinksPlugin(eleventy, options={}) {
 
     eleventy.addGlobalData("eleventyComputed", {
     	// Don't overwrite any existing global computed data
-        ...getExistingData(eleventy.globalData),
+        ...getExistingData(eleventy.globalData).eleventyComputed,
         backlinks(data) {
             if (isNoteFile(data.page.filePathStem) === false) return;
 
