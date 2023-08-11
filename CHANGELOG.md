@@ -13,6 +13,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     **Security** in case of vulnerabilities.
  -->
 
+## Unreleased
+
+### Fixed
+- ([`60efa1d`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/60efa1d9287ba049c5dc3bd3cb5c8e38438f1023)) Preserve existing global computed data. See [PR #7](https://github.com/binyamin/eleventy-plugin-backlinks/pull/7)
+
+
 ## 0.2.1 - 2022-10-26
 
 ### Fixed
