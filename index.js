@@ -1,24 +1,19 @@
-const backlinks = require('./lib/get-backlinks.js');
-const getExistingData = require('./lib/get-existing-data.js');
+import backlinks from './lib/get-backlinks.js';
+import getExistingData from './lib/get-existing-data.js';
 
 /**
  * @param eleventy
  * @param {object} [options]
  * @param {string} [options.folder] Root folder with your notes (default: 'notes')
- * @param {(note: any) => unknown} [options.getData] Get
+ * @param {(note: any) => Record<string, unknown>} [options.getData] Get
  * and return the data you want passed into `backlinks`
  */
 function BacklinksPlugin(eleventy, options = {}) {
-	options = {
-		folder: 'notes',
-		getData(note) {
-			return {
-				url: note.url,
-				title: note.data.title,
-			};
-		},
-		...options,
-	};
+	options.folder ??= 'notes';
+	options.getData ??= (note) => ({
+		url: note.url,
+		title: note.data.title,
+	});
 
 	// Remove leading or trailing slash from `options.folder`
 	options.folder = options.folder.replace(/^\/?(.+)\/?$/, '$1');
@@ -27,7 +22,7 @@ function BacklinksPlugin(eleventy, options = {}) {
 		return url.startsWith(`/${options.folder}/`);
 	}
 
-	eleventy.addCollection('notes', function (collection) {
+	eleventy.addCollection('notes', (collection) => {
 		return collection.getAll().filter((t) => isNoteFile(t.filePathStem));
 	});
 
@@ -42,4 +37,4 @@ function BacklinksPlugin(eleventy, options = {}) {
 	});
 }
 
-module.exports = BacklinksPlugin;
+export default BacklinksPlugin;

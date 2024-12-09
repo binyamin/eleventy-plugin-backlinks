@@ -15,6 +15,12 @@ and this project tries to adhere to
     **Security** in case of vulnerabilities.
  -->
 
+## Unreleased
+
+### Deprecated
+
+- Migrate to ESM. Drops support for 11ty v2
+
 ## 0.3.0 - 2024-12-09
 
 ### Added

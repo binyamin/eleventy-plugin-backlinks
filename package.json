@@ -1,5 +1,6 @@
 {
 	"name": "eleventy-plugin-backlinks",
+	"type": "module",
 	"version": "0.3.0",
 	"description": "Collect and display backlinks from your notes",
 	"keywords": [
@@ -14,6 +15,7 @@
 	"author": "Binyamin Aron Green (https://binyam.in/)",
 	"license": "MIT",
 	"main": "index.js",
+	"module": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/binyamin/eleventy-plugin-backlinks.git"
@@ -25,17 +27,15 @@
 	"scripts": {
 		"test": "node test/index.js",
 		"lint": "biome check",
-		"fmt": "biome fmt"
-	},
-	"dependencies": {
-		"markdown-it-wikilinks": "^1.4.0"
+		"fmt": "biome format --write"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
+		"@11ty/eleventy": "^3.0.0",
 		"@biomejs/biome": "1.9.4",
-		"markdown-it": "^14.1.0"
+		"markdown-it": "^14.1.0",
+		"markdown-it-wikilinks": "^1.4.0"
 	},
 	"peerDependencies": {
-		"@11ty/eleventy": ">=2.0.0"
+		"@11ty/eleventy": ">=3.0.0"
 	}
 }

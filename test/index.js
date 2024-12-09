@@ -1,19 +1,11 @@
-const path = require('node:path');
-const Eleventy = require('@11ty/eleventy');
+import path from 'node:path';
+import Eleventy from '@11ty/eleventy';
 
-const elev = new Eleventy(
-	path.join(__dirname, './stubs'),
-	path.join(__dirname, './out'),
-	{
-		quietMode: true,
-		configPath: path.join(__dirname, 'stubs', '.eleventy.js'),
-	},
-);
+const root = (...rest) => path.join(import.meta.dirname, ...rest);
 
-elev.toJSON()
-	.then((data) => {
-		// console.log('[test]', data);
-	})
-	.catch((e) => {
-		throw e;
-	});
+const elev = new Eleventy(root('stubs'), root('out'), {
+	quietMode: true,
+	configPath: root('stubs', '.eleventy.js'),
+});
+
+await elev.toJSON();

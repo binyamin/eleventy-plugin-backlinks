@@ -1,19 +1,20 @@
-const wikilinks = require('markdown-it-wikilinks');
-const md = require('markdown-it');
+import md from 'markdown-it';
+import wikilinks from 'markdown-it-wikilinks';
 
-module.exports = (eleventyConfig) => {
+import mod from '../../index.js';
+
+export default async (eleventyConfig) => {
 	eleventyConfig.addGlobalData('layout', 'default');
 
 	const mdLib = md().use(wikilinks);
 
 	eleventyConfig.setLibrary('md', mdLib);
 
-	eleventyConfig.addPlugin(require('../../index.js'));
+	eleventyConfig.addPlugin(mod);
 
 	return {
 		markdownTemplateEngine: 'njk',
 		dir: {
-			input: 'stubs',
 			layouts: '_layouts',
 		},
 	};

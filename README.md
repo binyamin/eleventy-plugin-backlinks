@@ -12,13 +12,13 @@ Collect and display backlinks from your notes.
 Add the plugin to your eleventy config, like so:
 
 ```js
-const eleventyBacklinks = require("eleventy-plugin-backlinks");
+import eleventyBacklinks from 'eleventy-plugin-backlinks';
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyBacklinks, {
 		folder: "/notes", // The folder with your notes
 	});
-};
+}
 ```
 
 For every page in the given folder, you get a `backlinks` variable. By default,
