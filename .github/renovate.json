@@ -1,6 +1,4 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": [
-		"local>binyamin/.github:renovate-config"
-	]
+	"extends": ["local>binyamin/.github:renovate-config"]
 }
