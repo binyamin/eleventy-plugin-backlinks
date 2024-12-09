@@ -1,6 +1,6 @@
 {
 	"name": "eleventy-plugin-backlinks",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "Collect and display backlinks from your notes",
 	"keywords": [
 		"eleventy",
@@ -27,11 +27,13 @@
 		"lint": "biome check",
 		"fmt": "biome fmt"
 	},
+	"dependencies": {
+		"markdown-it-wikilinks": "^1.4.0"
+	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"@biomejs/biome": "1.9.4",
-		"markdown-it": "^13.0.1",
-		"markdown-it-wikilinks": "^1.2.0"
+		"markdown-it": "^14.1.0"
 	},
 	"peerDependencies": {
 		"@11ty/eleventy": ">=2.0.0"
