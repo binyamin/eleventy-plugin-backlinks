@@ -15,8 +15,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+### Added
+- ([PR #11](https://github.com/binyamin/eleventy-plugin-backlinks/pull/11)) Support 11ty v3
+
+### Deprecated
+- ([PR #11](https://github.com/binyamin/eleventy-plugin-backlinks/pull/11)) Drop support for 11ty v1
+
 ### Fixed
-- ([`60efa1d`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/60efa1d9287ba049c5dc3bd3cb5c8e38438f1023)) Preserve existing global computed data. See [PR #7](https://github.com/binyamin/eleventy-plugin-backlinks/pull/7)
+- ([PR #7](https://github.com/binyamin/eleventy-plugin-backlinks/pull/7)) Preserve existing global computed data.
 
 
 ## 0.2.1 - 2022-10-26
