@@ -31,4 +31,4 @@ All input is welcome; feel free to [open an issue](https://github.com/binyamin/e
 
 
 ## Legal
-All source-code is provided under the terms of [the MIT license](https://github.com/binyamin/eleventy-plugin-backlinks/blob/main/LICENSE). Copyright 2022 Binyamin Aron Green.
+All source-code is provided under the terms of [the MIT license](https://github.com/binyamin/eleventy-plugin-backlinks/blob/main/LICENSE). Copyright 2024 Binyamin Aron Green.
