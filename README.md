@@ -46,4 +46,4 @@ program, you can browse
 
 All source-code is provided under the terms of
 [the MIT license](https://github.com/binyamin/eleventy-plugin-backlinks/blob/main/LICENSE).
-Copyright 2024 Binyamin Aron Green.
+Copyright 2025 Binyamin Aron Green.

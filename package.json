@@ -30,10 +30,10 @@
 		"fmt": "biome format --write"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0",
-		"@biomejs/biome": "1.9.4"
+		"@11ty/eleventy": "^3.1.2",
+		"@biomejs/biome": "~2.2.2"
 	},
 	"peerDependencies": {
-		"@11ty/eleventy": ">=3.0.0"
+		"@11ty/eleventy": "^3.0.0"
 	}
 }

@@ -17,6 +17,10 @@ and this project tries to adhere to
 
 ## Unreleased
 
+### Security
+
+- Updated to latest 11ty version
+
 ### Deprecated
 
 - Migrate to ESM. Drops support for 11ty v2
@@ -42,20 +46,17 @@ and this project tries to adhere to
 
 ### Fixed
 
-- ([`ad2aeff`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/ad2aeffb8d1d5c00f74ec5e757ed8bc56a23ba19))
-  Normalize strings when identifying backlinks. See
+- Normalize strings when identifying backlinks. See
   [binyamin/eleventy-garden#91](https://github.com/binyamin/eleventy-garden/pull/91).
 
 ## 0.2.0 - 2022-06-19
 
 ### Added
 
-- ([`cb21a1f`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/cb21a1f3d1e737e572c6f0c90d63092e05df98af))
-  Support URLs with `.html` and `.htm` file extensions.
+- Support URLs with `.html` and `.htm` file extensions.
 
 ## 0.1.0 - 2022-06-19
 
 ### Added
 
-- ([`32eeefe`](https://github.com/binyamin/eleventy-plugin-backlinks/commit/32eeefe75e3a6901219c5234e4fade794ac0376c))
-  Compute backlinks from page data
+- Compute backlinks from page data
