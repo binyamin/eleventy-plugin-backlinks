@@ -14,8 +14,8 @@
 	],
 	"author": "Binyamin Aron Green (https://binyam.in/)",
 	"license": "MIT",
-	"main": "index.js",
-	"module": "index.js",
+	"main": "src/index.js",
+	"module": "src/index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/binyamin/eleventy-plugin-backlinks.git"

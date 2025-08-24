@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import Eleventy from '@11ty/eleventy';
 
-import mod from '../index.js';
+import mod from '../src/index.js';
 
 const root = (...rest) =>
 	path.join(path.relative('.', import.meta.dirname), ...rest);

@@ -1,5 +1,5 @@
-import backlinks from './lib/get-backlinks.js';
-import getExistingData from './lib/get-existing-data.js';
+import backlinks from './get-backlinks.js';
+import getExistingData from './get-existing-data.js';
 
 /**
  * @param eleventy
