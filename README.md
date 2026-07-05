@@ -14,9 +14,9 @@ Add the plugin to your eleventy config, like so:
 ```js
 import eleventyBacklinks from 'eleventy-plugin-backlinks';
 
-export default function (eleventyConfig) {
+export default function(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyBacklinks, {
-		folder: "/notes", // The folder with your notes
+		folder: '/notes', // The folder with your notes
 		getData(note) {
 			return {
 				url: note.url,

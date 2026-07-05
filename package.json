@@ -17,7 +17,9 @@
 	"main": "src/index.js",
 	"module": "src/index.js",
 	"exports": "./src/index.js",
-	"files": ["src"],
+	"files": [
+		"src"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/binyamin/eleventy-plugin-backlinks.git"
