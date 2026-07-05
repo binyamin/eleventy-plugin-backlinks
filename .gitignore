@@ -1,1 +1,8 @@
+## IDE
+.vscode/
+!.vscode/extensions.json
+.idea/
+.zed/
+
+## Generated
 node_modules/
