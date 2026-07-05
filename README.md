@@ -17,12 +17,31 @@ import eleventyBacklinks from 'eleventy-plugin-backlinks';
 export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyBacklinks, {
 		folder: "/notes", // The folder with your notes
+		getData(note) {
+			return {
+				url: note.url,
+				title: note.data.title,
+			};
+		},
 	});
 }
 ```
 
+### Rendering
+
 For every page in the given folder, you get a `backlinks` variable. By default,
 it contains an array, with the title (if set) and the url of each page.
+
+```html
+<!-- includes/noteLayout.njk -->
+<ul>
+	{% for link in backlinks %}
+	<li>
+		<a href="{{ link.url }}">{{link.title}}</a>
+	</li>
+	{% endfor %}
+</ul>
+```
 
 ### Options
 
@@ -31,7 +50,9 @@ it contains an array, with the title (if set) and the url of each page.
 - **getData** (`function`) - Optionally, control which data will be passed to
   `backlinks`. The function receives a
   [collection item](https://www.11ty.dev/docs/collections/#collection-item-data-structure),
-  and is called for every relevant page.
+  and is called for every relevant page. You return an object, which is merged
+  with the page's data cascade. Using this option replaces the default
+  implementation.
 
 ## Contributing
 
