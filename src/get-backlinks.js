@@ -3,7 +3,7 @@ function caselessCompare(a, b) {
 }
 
 // This regex finds all wikilinks in a string
-const wikilinkRegExp = /\[\[\s*([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s*\]\]/g;
+const wikilinkRegExp = /\[\[\s*([^[\]|\n\r]+)(\|[^[\]|\n\r]+)?\s*\]\]/g;
 
 export default function (options) {
 	return async ({ collections, page }) => {
