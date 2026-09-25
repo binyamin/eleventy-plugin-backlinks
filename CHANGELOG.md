@@ -15,6 +15,12 @@ and this project tries to adhere to
     **Security** in case of vulnerabilities.
  -->
 
+## Unreleased
+
+### Security
+
+- updated 11ty version
+
 ## v1.0.0 - 2026-04-07
 
 ### Security
